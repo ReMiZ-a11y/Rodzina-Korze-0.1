@@ -1,0 +1,100 @@
+body {
+    width: 100%;
+    height: 900px;
+    margin: auto;
+    background-color: rgb(33, 33, 33);
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+   
+  --female-color: #ff99c8; /* Różowy/łososiowy */
+  --male-color: #a9d6e5;   /* Jasnoniebieski */
+  --genderless-color: #d3d3d3; /* Jasnoszary */
+  --background-color: #f8f9fa; /* Bardzo jasnoszary/białawy */
+  --text-color: #495057; /* Ciemnoszary dla lepszej czytelności na jasnym tle */
+}
+
+/* General container for the chart */
+#FamilyChart {
+    position: relative;
+}
+/* Style for the 'Random Person' button */
+  .random-person-button {
+    background: linear-gradient(145deg, #6c5ce7, #8e44ad);
+    color: white;
+    border: none;
+    border-radius: 50%; /* Okrągły kształt */
+    width: 50px; /* Zwiększony rozmiar */
+    height: 50px; /* Zwiększony rozmiar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+  }
+
+  .random-person-button:hover {
+    background: linear-gradient(145deg, #8e44ad, #6c5ce7);
+    transform: scale(1.1) rotate(10deg); /* Lepszy efekt na hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Style for the SVG icon inside the button */
+  .random-person-button svg {
+    fill: white;
+    width: 24px;
+    height: 24px;
+  }
+
+/* Style for the search container */
+.search-container {
+    position: absolute;
+    top: 5px;
+    left: 50px;
+    width: 150px;
+    z-index: 1000;
+}
+
+/* Style for the search input field */
+.search-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #555; /* Slightly lighter border on dark background */
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: #444; /* Darker input background */
+    color: #fff; /* White text */
+}
+
+/* Style for the search dropdown */
+.search-dropdown {
+    overflow-y: auto;
+    max-height: 300px;
+    background-color: #3a3a3a; /* Dark background for dropdown */
+    color: #fff; /* White text */
+    border: 1px solid #555; /* Lighter border */
+    border-top: none;
+    position: absolute;
+    width: 100%;
+    top: 38px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+    border-radius: 0 0 5px 5px;
+}
+
+/* Style for each item in the dropdown */
+.search-dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #555; /* Lighter border for separation */
+    transition: background-color 0.2s ease;
+}
+
+.search-dropdown-item:hover {
+    background-color: #555; /* Darker hover effect */
+}
