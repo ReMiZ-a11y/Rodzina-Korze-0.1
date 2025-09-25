@@ -63,6 +63,7 @@ body {
 /* Style for the search input field */
 .search-input {
     width: 100%;
+    padding-left:100px;
     padding: 8px;
     border: 1px solid #555; /* Slightly lighter border on dark background */
     border-radius: 5px;
